@@ -1,0 +1,21 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Choisissez un pseudo</title>
+</head>
+<body>
+    <h2>Entrez votre pseudo :</h2>
+    <form action="nickname.php" method="post">
+        <label for="pseudo">Pseudo :</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <p><a href="logout.php">Déconnexion</a></p>
+</body>
+</html>

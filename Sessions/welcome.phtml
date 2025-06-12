@@ -1,0 +1,17 @@
+<?php
+session_start();
+
+$pseudo = isset($_SESSION['pseudo']) ? $_SESSION['pseudo'] : 'invité';
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+</head>
+<body>
+    <h1>Bienvenue <?= $pseudo ?></h1>
+    <p><a href="index.php">Changer de pseudo</a></p>
+</body>
+</html>
