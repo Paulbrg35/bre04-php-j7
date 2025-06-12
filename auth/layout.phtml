@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+</head>
+<body>
+
+<?php if ($route === null || $route === 'home') : ?>
+    <?php require_once 'home.phtml'; ?>
+
+<?php elseif ($route === 'inscription') : ?>
+    <?php require_once 'register.phtml'; ?>
+
+<?php elseif ($route === 'connexion') : ?>
+    <?php require_once 'login.phtml'; ?>
+    
+<?php endif; ?>
+
+</body>
+</html>

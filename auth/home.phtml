@@ -1,0 +1,13 @@
+<?php if (isset($_SESSION['user'])): ?>
+    <h1>Bonjour <?= htmlspecialchars($_SESSION['user']['first_name'] . ' ' . $_SESSION['user']['last_name']) ?></h1>
+<?php else: ?>
+    <h1>Bienvenue sur mon site</h1>
+<?php endif; ?>
+
+<p>
+    <a href="index.php?route=inscription">Inscription</a>
+</p>
+
+<p>
+    <a href="index.php?route=connexion">Connexion</a>
+</p>
